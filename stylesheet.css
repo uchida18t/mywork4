@@ -6,8 +6,10 @@
 
 body {
   background-color: rgba(14, 3, 6, .8);
-  max-width: 1400px;
+  max-width: 1000px;
+  min-width: 320px;
   width: 100%;
+  margin: 0 auto;
 }
 
 ul {
@@ -134,12 +136,21 @@ section {
   padding-bottom: 16px;
 }
 
-.top-intro>p>span:nth-last-of-type(1) {
+.top-intro>.font-p {
+  text-align: left;
+  max-width: 450px;
+  margin: 0 auto;
+  -webkit-transform: translateX(67.5px);
+  -ms-transform: translateX(67.5px);
+  transform: translateX(67.5px);
+}
+
+/* .top-intro>p>span:nth-last-of-type(1) {
   margin-top: 16px;
   -webkit-transform: translateX(8px);
   -ms-transform: translateX(8px);
   transform: translateX(8px);
-}
+} */
 
 /* contentsWrapper */
 
@@ -164,7 +175,6 @@ section {
   margin-left: auto;
   margin-right: auto;
   border-radius: 6px;
-  cursor: pointer;
   position: relative;
 }
 
@@ -179,14 +189,14 @@ section {
   padding-top: 56.25%;
 }
 
-#adSpace>img {
-  display: block;
+.temporaryad {
   width: 100%;
   border-radius: 6px;
+  cursor: pointer;
   position: relative;
 }
 
-#adSpace>img::before,
+.temporaryad::before,
 .sns.container::before {
   content: "";
   display: block;
@@ -203,7 +213,12 @@ section {
   transition: opacity .2s;
 }
 
-#adSpace>img::before {
+.temporaryad::before {
+  border-radius: 6px;
+}
+
+.temporaryad>img {
+  width: 100%;
   border-radius: 6px;
 }
 
@@ -212,7 +227,7 @@ section {
 }
 
 .sns.container {
-  width: 720px;
+  width: 480px;
   margin-top: 16px;
   margin-bottom: 16px;
   padding: 12px;
@@ -228,8 +243,8 @@ section {
 }
 
 
-#adSpace>img:hover::before,
-#adSpace>img:active::before,
+.temporaryad>img:hover::before,
+.temporaryad>img:active::before,
 .sns.container:hover::before,
 .sns.container:active::before {
   opacity: 1;
@@ -242,21 +257,21 @@ section {
 
 .sns-detail {
   width: calc(86%);
-  padding-top: 19px;
+  padding-top: 13px;
   padding-left: 12px;
   text-align: left;
 }
 
 .sns-detail>p {
-  line-height: 1.75em;
+  line-height: 1.5em;
 }
 
 .sns-detail>p:nth-of-type(1) {
-  font-size: 1.2em;
   letter-spacing: 1px;
 }
 
 .sns-detail>p:nth-of-type(2) {
+  font-size: .8em;
   opacity: .8;
   -webkit-transform: translateX(10px);
   -ms-transform: translateX(10px);
