@@ -139,7 +139,8 @@ section {
   transition: all .1s;
 }
 
-.to-site:hover {
+.to-site:hover,
+.to-site:active {
   color: rgba(255, 255, 255, .9);
 }
 
@@ -200,7 +201,8 @@ section {
   transition: opacity .2s;
 }
 
-.sns.container:hover::before {
+.sns.container:hover::before,
+.sns.container:active::before {
   opacity: 1;
 }
 
