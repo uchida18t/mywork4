@@ -145,29 +145,11 @@ section {
   transform: translateX(67.5px);
 }
 
-/* .top-intro>p>span:nth-last-of-type(1) {
-  margin-top: 16px;
-  -webkit-transform: translateX(8px);
-  -ms-transform: translateX(8px);
-  transform: translateX(8px);
-} */
-
 /* contentsWrapper */
 
 /* #contentsWrapper {
   
 } */
-
-.to-site {
-  float: left;
-  color: rgba(255, 255, 255, .6);
-  transition: all .1s;
-}
-
-.to-site:hover,
-.to-site:active {
-  color: rgba(255, 255, 255, .9);
-}
 
 #adSpace {
   width: 480px;
