@@ -34,7 +34,6 @@
   #adSpace {
     width: 450px;
     margin-top: 40px;
-    border-radius: 6px;
   }
 
   .sns.container {
@@ -106,6 +105,14 @@
   #adSpace {
     width: 100%;
     margin-top: 38px;
+    border-radius: 5px;
+  }
+
+  #adSpace>img {
+    border-radius: 5px;
+  }
+  
+  #adSpace>img::before {
     border-radius: 5px;
   }
 
@@ -187,7 +194,6 @@
   #adSpace {
     width: 90%;
     margin-top: 30px;
-    border-radius: 5px;
   }
 
   .sns.container {
@@ -223,11 +229,14 @@
 
   .sns-detail>p:nth-of-type(2) {
     font-size: 10px;
+    -webkit-transform: translateX(8px);
+    -ms-transform: translateX(8px);
+    transform: translateX(8px);
   }
 
   footer {
     padding-top: 5px;
-    padding-bottom: 15px;
+    padding-bottom: 8px;
   }
   
   footer>p {
